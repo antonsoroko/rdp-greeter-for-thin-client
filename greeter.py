@@ -71,7 +71,6 @@ class GreeterApp:
         return False
 
     def check_pincode(self, widget, *args):
-        print(*args)
         rdp_servers = self.config.get("rdp_servers")
         for rdp_server in rdp_servers:
             if self.pincode_entry.get_text() == rdp_server.get("pincode"):
@@ -111,11 +110,9 @@ class GreeterApp:
         os.system("systemctl reboot")
 
     def on_help_clicked(self, widget, *args):
-        print("on_help_clicked")
         self.toggle_window(self.help_window, True)
 
     def on_help_close_clicked(self, widget, *args):
-        print("on_help_ok_clicked")
         self.toggle_window(self.help_window, False)
 
     def toggle_window(self, window, visibility):
@@ -124,7 +121,6 @@ class GreeterApp:
         window.set_modal(visibility)
 
     def on_destroy(self, widget, *args):
-        print("on_destroy")
         GLib.source_remove(self.timeout_id)
         Gtk.main_quit()
         sys.exit(0)
