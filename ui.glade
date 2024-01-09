@@ -164,8 +164,6 @@ Press CTRL+ALT+BACKSPACE to reset session.
                     </child>
                   </object>
                   <packing>
-                    <property name="left-attach">1</property>
-                    <property name="right-attach">2</property>
                     <property name="top-attach">5</property>
                     <property name="bottom-attach">6</property>
                     <property name="x-options">GTK_SHRINK</property>
@@ -463,8 +461,8 @@ Press CTRL+ALT+BACKSPACE to reset session.
                     </child>
                   </object>
                   <packing>
-                    <property name="left-attach">2</property>
-                    <property name="right-attach">3</property>
+                    <property name="left-attach">1</property>
+                    <property name="right-attach">2</property>
                     <property name="top-attach">5</property>
                     <property name="bottom-attach">6</property>
                     <property name="x-options">GTK_SHRINK</property>
@@ -489,6 +487,8 @@ Press CTRL+ALT+BACKSPACE to reset session.
                     </child>
                   </object>
                   <packing>
+                    <property name="left-attach">2</property>
+                    <property name="right-attach">3</property>
                     <property name="top-attach">5</property>
                     <property name="bottom-attach">6</property>
                     <property name="x-options">GTK_SHRINK</property>
