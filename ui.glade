@@ -24,6 +24,7 @@
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="has-focus">True</property>
+                <property name="can-default">True</property>
                 <property name="has-default">True</property>
                 <property name="receives-default">True</property>
                 <signal name="clicked" handler="on_help_close_clicked" swapped="no"/>
@@ -450,6 +451,7 @@ Press CTRL+ALT+BACKSPACE to reset session.
                     <property name="height-request">80</property>
                     <property name="visible">True</property>
                     <property name="can-focus">True</property>
+                    <property name="can-default">True</property>
                     <property name="receives-default">True</property>
                     <signal name="clicked" handler="check_pincode" swapped="no"/>
                     <child>
