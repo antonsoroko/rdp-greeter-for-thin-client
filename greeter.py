@@ -43,6 +43,10 @@ class GreeterApp:
                     self.display, self.config.get("cursor", "default")
                 )
             )
+        if self.help_window:
+            if self.config.get("help_text"):
+                self.help_text = self.builder.get_object("help_text")
+                self.help_text.set_label(self.config.get("help_text"))
         self.builder.connect_signals(self)
 
     def Run(self):
