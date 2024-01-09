@@ -1,0 +1,34 @@
+{
+    "cursor": "pointer",
+    "_all_cursor_names": "see https://lazka.github.io/pgi-docs/Gdk-3.0/classes/Cursor.html#Gdk.Cursor.new_from_name",
+    "rdp_servers": [
+        {
+            "server": "192.168.0.100",
+            "user": "user1",
+            "password": "password1",
+            "additional_parameters": [
+                "/sound:sys:alsa,format:1,quality:medium,latency:50",
+                "/log-level:INFO"
+            ],
+            "pincode": "0000"
+        },
+        {
+            "server": "192.168.0.200",
+            "user": "user2",
+            "password": "password2",
+            "additional_parameters": [
+                "/gfx:avc444"
+            ],
+            "pincode": "1234"
+        },
+        {
+            "server": "server3.localdomain",
+            "user": "localdomain\\user3",
+            "password": "password3",
+            "additional_parameters": [
+                "/gfx:RFX"
+            ],
+            "pincode": "7777"
+        }
+    ]
+}
