@@ -21,6 +21,7 @@ class GreeterApp:
             print(f"Failed to read config.json: {e}")
             sys.exit(1)
 
+        Gtk.init()
         self.builder = Gtk.Builder()
         self.builder.add_from_file("ui.glade")
         self.main_window = self.builder.get_object("main_window")
@@ -103,8 +104,9 @@ class GreeterApp:
         self.pincode_entry.set_text("")
 
     def num_press(self, widget, *args):
+        number = widget.get_child().get_text()
         self.pincode_entry.set_text(
-            self.pincode_entry.get_text() + widget.get_tooltip_text()
+            self.pincode_entry.get_text() + number
         )
 
     def sys_poweroff(self, widget, *args):

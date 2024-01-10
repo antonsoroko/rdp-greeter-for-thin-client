@@ -150,7 +150,6 @@ Press CTRL+ALT+BACKSPACE to reset session.
                     <property name="visible">True</property>
                     <property name="can-focus">True</property>
                     <property name="receives-default">True</property>
-                    <property name="tooltip-text" translatable="yes">0</property>
                     <signal name="clicked" handler="num_press" swapped="no"/>
                     <child>
                       <object class="GtkLabel" id="l_0">
@@ -179,7 +178,6 @@ Press CTRL+ALT+BACKSPACE to reset session.
                     <property name="visible">True</property>
                     <property name="can-focus">True</property>
                     <property name="receives-default">True</property>
-                    <property name="tooltip-text" translatable="yes">1</property>
                     <signal name="clicked" handler="num_press" swapped="no"/>
                     <child>
                       <object class="GtkLabel" id="l_1">
@@ -208,7 +206,6 @@ Press CTRL+ALT+BACKSPACE to reset session.
                     <property name="visible">True</property>
                     <property name="can-focus">True</property>
                     <property name="receives-default">True</property>
-                    <property name="tooltip-text" translatable="yes">2</property>
                     <signal name="clicked" handler="num_press" swapped="no"/>
                     <child>
                       <object class="GtkLabel" id="l_2">
@@ -239,7 +236,6 @@ Press CTRL+ALT+BACKSPACE to reset session.
                     <property name="visible">True</property>
                     <property name="can-focus">True</property>
                     <property name="receives-default">True</property>
-                    <property name="tooltip-text" translatable="yes">3</property>
                     <signal name="clicked" handler="num_press" swapped="no"/>
                     <child>
                       <object class="GtkLabel" id="l_3">
@@ -270,7 +266,6 @@ Press CTRL+ALT+BACKSPACE to reset session.
                     <property name="visible">True</property>
                     <property name="can-focus">True</property>
                     <property name="receives-default">True</property>
-                    <property name="tooltip-text" translatable="yes">4</property>
                     <signal name="clicked" handler="num_press" swapped="no"/>
                     <child>
                       <object class="GtkLabel" id="l_4">
@@ -299,7 +294,6 @@ Press CTRL+ALT+BACKSPACE to reset session.
                     <property name="visible">True</property>
                     <property name="can-focus">True</property>
                     <property name="receives-default">True</property>
-                    <property name="tooltip-text" translatable="yes">5</property>
                     <signal name="clicked" handler="num_press" swapped="no"/>
                     <child>
                       <object class="GtkLabel" id="l_5">
@@ -330,7 +324,6 @@ Press CTRL+ALT+BACKSPACE to reset session.
                     <property name="visible">True</property>
                     <property name="can-focus">True</property>
                     <property name="receives-default">True</property>
-                    <property name="tooltip-text" translatable="yes">6</property>
                     <signal name="clicked" handler="num_press" swapped="no"/>
                     <child>
                       <object class="GtkLabel" id="l_6">
@@ -361,7 +354,6 @@ Press CTRL+ALT+BACKSPACE to reset session.
                     <property name="visible">True</property>
                     <property name="can-focus">True</property>
                     <property name="receives-default">True</property>
-                    <property name="tooltip-text" translatable="yes">7</property>
                     <signal name="clicked" handler="num_press" swapped="no"/>
                     <child>
                       <object class="GtkLabel" id="l_7">
@@ -390,7 +382,6 @@ Press CTRL+ALT+BACKSPACE to reset session.
                     <property name="visible">True</property>
                     <property name="can-focus">True</property>
                     <property name="receives-default">True</property>
-                    <property name="tooltip-text" translatable="yes">8</property>
                     <signal name="clicked" handler="num_press" swapped="no"/>
                     <child>
                       <object class="GtkLabel" id="l_8">
@@ -421,7 +412,6 @@ Press CTRL+ALT+BACKSPACE to reset session.
                     <property name="visible">True</property>
                     <property name="can-focus">True</property>
                     <property name="receives-default">True</property>
-                    <property name="tooltip-text" translatable="yes">9</property>
                     <signal name="clicked" handler="num_press" swapped="no"/>
                     <child>
                       <object class="GtkLabel" id="l_9">
@@ -453,6 +443,7 @@ Press CTRL+ALT+BACKSPACE to reset session.
                     <property name="can-focus">True</property>
                     <property name="can-default">True</property>
                     <property name="receives-default">True</property>
+                    <property name="tooltip-text" translatable="yes">Enter</property>
                     <signal name="clicked" handler="check_pincode" swapped="no"/>
                     <child>
                       <object class="GtkImage" id="image2">
@@ -479,6 +470,7 @@ Press CTRL+ALT+BACKSPACE to reset session.
                     <property name="visible">True</property>
                     <property name="can-focus">True</property>
                     <property name="receives-default">True</property>
+                    <property name="tooltip-text" translatable="yes">Delete</property>
                     <signal name="clicked" handler="clear_pass" swapped="no"/>
                     <child>
                       <object class="GtkImage" id="image3">
@@ -498,13 +490,14 @@ Press CTRL+ALT+BACKSPACE to reset session.
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkButton" id="b_quit">
+                  <object class="GtkButton" id="b_poweroff">
                     <property name="use-action-appearance">False</property>
                     <property name="width-request">80</property>
                     <property name="height-request">80</property>
                     <property name="visible">True</property>
                     <property name="can-focus">True</property>
                     <property name="receives-default">True</property>
+                    <property name="tooltip-text" translatable="yes">Poweroff</property>
                     <signal name="clicked" handler="sys_poweroff" swapped="no"/>
                     <child>
                       <object class="GtkImage" id="image5">
@@ -531,6 +524,7 @@ Press CTRL+ALT+BACKSPACE to reset session.
                     <property name="visible">True</property>
                     <property name="can-focus">True</property>
                     <property name="receives-default">True</property>
+                    <property name="tooltip-text" translatable="yes">Reboot</property>
                     <signal name="clicked" handler="sys_reboot" swapped="no"/>
                     <child>
                       <object class="GtkImage" id="image6">
@@ -557,6 +551,7 @@ Press CTRL+ALT+BACKSPACE to reset session.
                     <property name="visible">True</property>
                     <property name="can-focus">True</property>
                     <property name="receives-default">True</property>
+                    <property name="tooltip-text" translatable="yes">Help</property>
                     <signal name="clicked" handler="on_help_clicked" swapped="no"/>
                     <child>
                       <object class="GtkImage" id="image1">
