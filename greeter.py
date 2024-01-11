@@ -15,15 +15,16 @@ from gi.repository import Gdk, Pango
 
 class GreeterApp:
     def __init__(self):
+        dir_path = os.path.dirname(os.path.realpath(__file__))
         try:
-            self.config = json.load(open("config.json"))
+            self.config = json.load(open(os.path.join(dir_path, "config.json")))
         except Exception as e:
             print(f"Failed to read config.json: {e}")
             sys.exit(1)
 
         Gtk.init()
         self.builder = Gtk.Builder()
-        self.builder.add_from_file("ui.glade")
+        self.builder.add_from_file(os.path.join(dir_path, "greeter.glade"))
         self.main_window = self.builder.get_object("main_window")
         self.help_window = self.builder.get_object("help_window")
         self.pincode_entry = self.builder.get_object("pincode_entry")
@@ -53,7 +54,6 @@ class GreeterApp:
     def Run(self):
         settings = Gtk.Settings.get_default()
         settings.props.gtk_button_images = True
-        settings.props.gtk_enable_tooltips = False
         self.main_window.show()
         Gtk.main()
 
@@ -105,9 +105,7 @@ class GreeterApp:
 
     def num_press(self, widget, *args):
         number = widget.get_child().get_text()
-        self.pincode_entry.set_text(
-            self.pincode_entry.get_text() + number
-        )
+        self.pincode_entry.set_text(self.pincode_entry.get_text() + number)
 
     def sys_poweroff(self, widget, *args):
         os.system("systemctl poweroff")
