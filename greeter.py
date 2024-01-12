@@ -6,6 +6,8 @@ import os
 import sys
 import subprocess
 import json
+import locale
+import gettext
 import gi
 
 gi.require_version("Gtk", "3.0")
@@ -22,8 +24,22 @@ class GreeterApp:
             print(f"Failed to read config.json: {e}")
             sys.exit(1)
 
+        # setting up localization
+        appname = "greeter"
+        locales_dir = os.path.join(
+            dir_path,
+            "locale",
+        )
+        # required for showing Glade file translations
+        locale.bindtextdomain(appname, locales_dir)
+        locale.textdomain(locales_dir)
+        # required for code translations
+        gettext.bindtextdomain(appname, locales_dir)
+        gettext.textdomain(appname)
+
         Gtk.init()
         self.builder = Gtk.Builder()
+        self.builder.set_translation_domain(appname)
         self.builder.add_from_file(os.path.join(dir_path, "greeter.glade"))
         self.main_window = self.builder.get_object("main_window")
         self.help_window = self.builder.get_object("help_window")
@@ -45,10 +61,6 @@ class GreeterApp:
                     self.display, self.config.get("cursor", "default")
                 )
             )
-        if self.help_window:
-            if self.config.get("help_text"):
-                self.help_text = self.builder.get_object("help_text")
-                self.help_text.set_label(self.config.get("help_text"))
         self.builder.connect_signals(self)
 
     def Run(self):

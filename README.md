@@ -53,6 +53,14 @@ Update Gtk icon cache: `gtk-update-icon-cache -f /usr/share/icons/THEMENAME/`
 Update cache for Gdk pixbuf loaders. Use binary for your arch, e.g.:
 `/usr/lib/arm-linux-gnueabihf/gdk-pixbuf-2.0/gdk-pixbuf-query-loaders --update-cache`
 
+### Translation
+
+Configure your system locale, e.g.: https://wiki.debian.org/Locale
+
+Also, check `/etc/default/locale` for correctness, e.g. remove manually added `LANGUAGE` variable. Then check `env | grep -i 'LANG\|LC'` for correctness.
+
+Use tool like [Poedit](https://poedit.net/) to create new translation.
+
 ### Screenshot
 
 ![screenshot](screenshot.png)
