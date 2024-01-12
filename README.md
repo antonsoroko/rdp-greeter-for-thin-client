@@ -46,6 +46,12 @@ Configure cursors:
 
 `sudo update-alternatives --config x-cursor-theme`
 
+#### Troubleshooting:
+
+Update Gtk icon cache: `gtk-update-icon-cache -f /usr/share/icons/THEMENAME/`
+
+Update cache for Gdk pixbuf loaders. Use binary for your arch, e.g.:
+`/usr/lib/arm-linux-gnueabihf/gdk-pixbuf-2.0/gdk-pixbuf-query-loaders --update-cache`
 
 ### Screenshot
 
