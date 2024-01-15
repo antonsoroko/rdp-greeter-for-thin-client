@@ -1,0 +1,56 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: greeter\n"
+"POT-Creation-Date: 2024-01-15 15:06+0300\n"
+"PO-Revision-Date: 2024-01-15 15:06+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4\n"
+"X-Poedit-Basepath: ../../..\n"
+"X-Poedit-SearchPath-0: greeter.glade\n"
+
+#: greeter.glade:8 greeter.glade:557
+msgid "Help"
+msgstr "Помощь"
+
+#: greeter.glade:51
+msgid ""
+"Press buttons with numbers to enter PIN code.\n"
+"\n"
+"Press buttons to reboot or shutdown device.\n"
+"\n"
+"Press CTRL+ALT+BACKSPACE to reset session.\n"
+msgstr ""
+"Нажмите кнопки с цифрами, чтобы ввести PIN-код.\n"
+"\n"
+"Нажмите кнопки, чтобы перезагрузить или выключить устройство.\n"
+"\n"
+"Нажмите CTRL+ALT+BACKSPACE, чтобы сбросить сеанс.\n"
+
+#: greeter.glade:70
+msgid "RDP Client Greeter"
+msgstr "Экран приветствия клиента RDP"
+
+#: greeter.glade:89
+msgid "Terminate RDP session"
+msgstr "Завершить сеанс RDP"
+
+#: greeter.glade:449
+msgid "Enter"
+msgstr "Ввод"
+
+#: greeter.glade:476
+msgid "Clear"
+msgstr "Очистить"
+
+#: greeter.glade:503
+msgid "Poweroff"
+msgstr "Выключить"
+
+#: greeter.glade:530
+msgid "Reboot"
+msgstr "Перезагрузить"

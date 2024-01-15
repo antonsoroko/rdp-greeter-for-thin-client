@@ -1,0 +1,51 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: greeter\n"
+"POT-Creation-Date: 2024-01-15 15:06+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: greeter.glade\n"
+
+#: greeter.glade:8 greeter.glade:557
+msgid "Help"
+msgstr ""
+
+#: greeter.glade:51
+msgid ""
+"Press buttons with numbers to enter PIN code.\n"
+"\n"
+"Press buttons to reboot or shutdown device.\n"
+"\n"
+"Press CTRL+ALT+BACKSPACE to reset session.\n"
+msgstr ""
+
+#: greeter.glade:70
+msgid "RDP Client Greeter"
+msgstr ""
+
+#: greeter.glade:89
+msgid "Terminate RDP session"
+msgstr ""
+
+#: greeter.glade:449
+msgid "Enter"
+msgstr ""
+
+#: greeter.glade:476
+msgid "Clear"
+msgstr ""
+
+#: greeter.glade:503
+msgid "Poweroff"
+msgstr ""
+
+#: greeter.glade:530
+msgid "Reboot"
+msgstr ""
